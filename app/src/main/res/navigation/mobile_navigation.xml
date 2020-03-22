@@ -14,12 +14,19 @@
     <fragment
         android:id="@+id/navigation_dashboard"
         android:name="jp.vasic2000.bottomna.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
+        android:label="@string/title_food"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="jp.vasic2000.bottomna.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:name="cz.vasic2000.photoBoxApp.ui.moscow_snowfall2018.Moscow_SnowFall_2018"
+        android:label="@string/title_snow"
+        tools:layout="@layout/fragment_snowfall_2018" />
+
+    <fragment
+        android:id="@+id/navigation_train"
+        android:name="jp.vasic2000.bottomna.ui.trains.TrainFragment"
+        android:label="TrainFragment"
+        tools:layout="@layout/fragment_train" />
+
 </navigation>
