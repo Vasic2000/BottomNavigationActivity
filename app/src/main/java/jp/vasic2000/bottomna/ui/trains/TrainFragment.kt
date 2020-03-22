@@ -24,8 +24,6 @@ class TrainFragment : Fragment() {
 
         val layoutManager =
             LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-
-//        val layoutManager = GridLayoutManager(context, 2);
         recyclerView.layoutManager = layoutManager
         val data = DataTrain()
         val myAdapter =

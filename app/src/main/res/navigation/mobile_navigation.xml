@@ -26,7 +26,7 @@
     <fragment
         android:id="@+id/navigation_train"
         android:name="jp.vasic2000.bottomna.ui.trains.TrainFragment"
-        android:label="TrainFragment"
+        android:label="@string/title_trains"
         tools:layout="@layout/fragment_train" />
 
 </navigation>
