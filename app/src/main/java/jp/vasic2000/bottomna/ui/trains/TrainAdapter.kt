@@ -13,10 +13,7 @@ class TrainAdapter(var dataList: List<String>?) : RecyclerView.Adapter<TrainAdap
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view: View =
             LayoutInflater.from(parent.context).inflate(R.layout.item_card2, parent, false)
-        return MyViewHolder(
-            view,
-            list
-        )
+        return MyViewHolder(view, list)
     }
 
     override fun onBindViewHolder(myViewHolder: MyViewHolder, position: Int) {

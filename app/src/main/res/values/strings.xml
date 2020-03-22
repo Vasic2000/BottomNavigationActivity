@@ -4,4 +4,5 @@
     <string name="title_food">Food</string>
     <string name="title_snow">SnowFall</string>
     <string name="title_trains">Trains</string>
+    <string name="change_to_tab_activity">Change to TAB Activity</string>
 </resources>

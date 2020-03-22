@@ -5,12 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import jp.vasic2000.bottomna.R
-import jp.vasic2000.bottomna.ui.trains.DataTrain
-import jp.vasic2000.bottomna.ui.trains.TrainAdapter
 
 class TrainFragment : Fragment() {
 
@@ -26,8 +23,7 @@ class TrainFragment : Fragment() {
             LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         recyclerView.layoutManager = layoutManager
         val data = DataTrain()
-        val myAdapter =
-            TrainAdapter(data.getDataList())
+        val myAdapter = TrainAdapter(data.getDataList())
         recyclerView.adapter = myAdapter
         return view
     }

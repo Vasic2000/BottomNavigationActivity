@@ -1,4 +1,4 @@
-package jp.vasic2000.bottomna.ui.home
+package jp.vasic2000.bottomna.ui.home2
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,12 +10,12 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import jp.vasic2000.bottomna.BNAActivity
 import jp.vasic2000.bottomna.R
-import jp.vasic2000.bottomna.TABActivity
 
-class HomeFragment : Fragment() {
+class Home2Fragment : Fragment() {
 
-    private lateinit var homeViewModel: HomeViewModel
+    private lateinit var homeViewModel: Home2ViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -23,26 +23,26 @@ class HomeFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
         homeViewModel =
-                ViewModelProvider(this).get(HomeViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_home, container, false)
+                ViewModelProvider(this).get(Home2ViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_home2, container, false)
         val textView: TextView = root.findViewById(R.id.text_home)
-        chkTAB(root)
+        chkBNA(root)
         homeViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root
     }
 
-    private fun chkTAB(root: View) {
-        val chkBNA: Button = root.findViewById(R.id.chkTAB)
+    private fun chkBNA(root: View) {
+        val chkBNA: Button = root.findViewById(R.id.chkBNA)
         chkBNA.setOnClickListener { view ->
             restartApp()
-            activity?.finish()
         }
     }
 
     private fun restartApp() {
-        val intent = Intent(activity, TABActivity::class.java)
+        val intent = Intent(activity, BNAActivity::class.java)
         startActivity(intent)
+        activity?.finish()
     }
 }
