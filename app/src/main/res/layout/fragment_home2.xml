@@ -25,7 +25,7 @@
         android:id="@+id/chkBNA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Change to BNA Activity"
+        android:text="@string/change_to_bna_activity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

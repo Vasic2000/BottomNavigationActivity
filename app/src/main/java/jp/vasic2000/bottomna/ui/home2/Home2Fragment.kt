@@ -37,12 +37,12 @@ class Home2Fragment : Fragment() {
         val chkBNA: Button = root.findViewById(R.id.chkBNA)
         chkBNA.setOnClickListener { view ->
             restartApp()
+            activity?.finish()
         }
     }
 
     private fun restartApp() {
         val intent = Intent(activity, BNAActivity::class.java)
         startActivity(intent)
-        activity?.finish()
     }
 }

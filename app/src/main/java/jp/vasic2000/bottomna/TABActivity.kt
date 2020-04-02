@@ -7,7 +7,7 @@ import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
 import cz.vasic2000.photoBoxApp.ui.moscow_snowfall2018.Moscow_SnowFall_2018
 import jp.vasic2000.bottomna.ui.dashboard.DashboardFragment
-import jp.vasic2000.bottomna.ui.home.HomeFragment
+import jp.vasic2000.bottomna.ui.home2.Home2Fragment
 import jp.vasic2000.bottomna.ui.mainTAB.MyAdapter
 import jp.vasic2000.bottomna.ui.trains.TrainFragment
 
@@ -15,7 +15,7 @@ class TABActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tab)
-        val fragment1: Fragment = HomeFragment()
+        val fragment1: Fragment = Home2Fragment()
         val fragment2: Fragment = DashboardFragment()
         val fragment3: Fragment = Moscow_SnowFall_2018()
         val fragment4: Fragment = TrainFragment()

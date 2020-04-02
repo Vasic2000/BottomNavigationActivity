@@ -34,8 +34,8 @@ class HomeFragment : Fragment() {
     }
 
     private fun chkTAB(root: View) {
-        val chkBNA: Button = root.findViewById(R.id.chkTAB)
-        chkBNA.setOnClickListener { view ->
+        val chkTAB: Button = root.findViewById(R.id.chkTAB)
+        chkTAB.setOnClickListener { view ->
             restartApp()
             activity?.finish()
         }
