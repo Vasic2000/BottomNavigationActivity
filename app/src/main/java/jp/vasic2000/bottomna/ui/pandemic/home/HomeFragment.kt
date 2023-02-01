@@ -1,4 +1,4 @@
-package jp.vasic2000.bottomna.ui.home
+package jp.vasic2000.bottomna.ui.pandemic.home
 
 import android.content.Intent
 import android.os.Bundle
