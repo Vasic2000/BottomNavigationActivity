@@ -34,6 +34,7 @@ class PandemicAdapter(var dataList: List<String>?) : RecyclerView.Adapter<Pandem
                 1 -> imageView.setImageResource(R.drawable.covid2)
                 2 -> imageView.setImageResource(R.drawable.covid3)
                 3 -> imageView.setImageResource(R.drawable.covid4)
+                4 -> imageView.setImageResource(R.drawable.covid5)
             }
         }
     }
